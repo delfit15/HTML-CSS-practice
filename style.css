@@ -50,21 +50,20 @@ h1{
 
 h2{
     font-size: 1.5em;
+    padding-top:0.5em;
 }
 
 
 
 #main-1{
-    height: 75vh;
-    margin:50px;
+    padding:50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+
 }
 
 #pic img {
-margin:10px;
 border-radius: 50%;
 overflow:hidden;
 /* responsive */
@@ -120,7 +119,7 @@ background-color:rgba(255, 223, 137, 0.2);
 .blog-container{
 display: flex;
 flex-wrap: wrap;
-justify-content: flex-start;
+justify-content: center;
 
 
 
@@ -178,22 +177,43 @@ a{
     text-decoration: none;
 }
 
-@media only screen and (max-width:450px){ /* cellphone */
+@media only screen and (max-width:670px){ /* cellphone */
+
+main {
+    padding:0;
+
+}
+
+#main-1{
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+
 .hero{
     flex-direction: column;
 }
 
-#header {
-flex-direction: column;
-}
-
 #header #title {
 text-align: center;
+display:none;
 }
 
 #pic img {
  min-width: 200px;
- width:300px;
+ width:250px;
  height:auto;
+ padding:20px;
+ 
  }
+
+ 
+.blog-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+    
+    }
 }
